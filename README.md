@@ -18,3 +18,10 @@ $ docker logs -f demoapp
 CTRL+C
 $ docker rm -f demoapp
 ```
+
+Run demoapp in a container using syslog as logging driver.
+
+```
+$ docker run -d --log-driver=syslog --log-opt tag=demoapp --name demoapp demoapp:latest
+$ tail -f /var/log/syslog | grep -i 'demoapp'
+```
