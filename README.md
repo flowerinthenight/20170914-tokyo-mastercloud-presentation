@@ -28,7 +28,7 @@ $ tail -f /var/log/syslog | grep -i 'demoapp'
 
 Run demoapp in a container using ETW as logging driver (Windows).
 
-* First, run `mftrace` to read real-time logs from ETW. Tool is already provided, along with the config file.
+* First, run [`mftrace`](https://msdn.microsoft.com/en-us/library/windows/desktop/ff685116%28v=vs.85%29.aspx?f=255&MSPPError=-2147217396) to read real-time logs from ETW. Tool is already provided, along with the config file.
 
 ```
 # do this in a separate cmd/powershell window
