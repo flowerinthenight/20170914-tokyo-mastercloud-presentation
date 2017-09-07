@@ -1,0 +1,6 @@
+FROM golang:1.8.3-nanoserver
+
+ADD . /go/src/demoapp
+WORKDIR /go/src/demoapp
+RUN go build -v
+ENTRYPOINT ["/go/src/demoapp/demoapp"]
