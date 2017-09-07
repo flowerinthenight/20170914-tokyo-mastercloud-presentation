@@ -26,7 +26,7 @@ $ docker run -d --log-driver=syslog --log-opt tag=demoapp --name demoapp demoapp
 $ tail -f /var/log/syslog | grep -i 'demoapp'
 ```
 
-Run demoapp in a container using ETW as logging driver (Windows)
+Run demoapp in a container using ETW as logging driver (Windows).
 
 * First, run `mftrace` to read real-time logs from ETW. Tool is already provided, along with the config file.
 
