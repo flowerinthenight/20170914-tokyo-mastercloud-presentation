@@ -1,6 +1,6 @@
 ### demoapp
 
-Run demoapp as native, out to stdout.
+Run demoapp as native, out to stdout. This demoapp is written in Go so a [build environment](https://golang.org/doc/install) is needed.
 
 ```
 $ cd demoapp
